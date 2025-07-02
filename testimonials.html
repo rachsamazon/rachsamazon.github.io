@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Testimonials | Trusted.Zone</title>
+  <title>Testimonials</title>
+  
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #0d1b2a;
       color: #ffffff;
-      animation: fadeIn 1s ease;
     }
     nav {
       background-color: #1b263b;
@@ -26,6 +26,17 @@
       padding: 4rem;
       text-align: center;
     }
+    .hero {
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+    .price-box {
+      background: #1b263b;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 8px;
+      width: 300px;
+    }
     .testimonial {
       background: #1b263b;
       padding: 2rem;
@@ -38,13 +49,11 @@
       margin-top: 1rem;
       font-weight: bold;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
   </style>
+
 </head>
 <body>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -52,20 +61,21 @@
     <a href="testimonials.html">Testimonials</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <div class="container">
-    <h1>What Our Clients Say</h1>
-    <div class="testimonial">
-      “We caught our first unauthorized access attempt within 48 hours of deploying Trusted.Zone. Brilliant service.”
-      <div class="author">– M. Kovač, IT Manager</div>
-    </div>
-    <div class="testimonial">
-      “Trusted.Zone gave us instant visibility without installing anything on our production systems.”
-      <div class="author">– A. Horvat, CEO, FinCore</div>
-    </div>
-    <div class="testimonial">
-      “We sleep better knowing we have a decoy watching for bad actors around the clock.”
-      <div class="author">– T. Jurić, SysAdmin</div>
-    </div>
-  </div>
+
+<div class="container">
+        <h1>What Our Clients Say</h1>
+        <div class="testimonial">
+          “Trusted.Zone caught a brute force scan just two hours after we deployed. Worth every cent.”
+          <div class="author">– IT Manager, SME Croatia</div>
+        </div>
+        <div class="testimonial">
+          “Simple, fast, and reliable. I wish we had this years ago.”
+          <div class="author">– Network Admin, LegalTech GmbH</div>
+        </div>
+        <div class="testimonial">
+          “Peace of mind with a one-command install. Finally, cybersecurity that just works.”
+          <div class="author">– CISO, FinTech Baltic</div>
+        </div>
+        </div>
 </body>
 </html>
