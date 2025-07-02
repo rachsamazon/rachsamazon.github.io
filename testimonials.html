@@ -10,6 +10,11 @@
       font-family: Arial, sans-serif;
       background-color: #0d1b2a;
       color: #ffffff;
+      animation: fadeIn 0.5s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
     nav {
       background-color: #1b263b;
@@ -55,11 +60,13 @@
 <body>
 
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="pricing.html">Pricing</a>
-    <a href="testimonials.html">Testimonials</a>
-    <a href="contact.html">Contact</a>
+    <div style="background-color:#1b263b; padding:1rem; text-align:center;">
+      <a href="index.html" style="color:white; margin:0 1rem; text-decoration:none; font-weight:bold;">Home</a>
+      <a href="about.html" style="color:white; margin:0 1rem; text-decoration:none; font-weight:bold;">About</a>
+      <a href="pricing.html" style="color:white; margin:0 1rem; text-decoration:none; font-weight:bold;">Pricing</a>
+      <a href="testimonials.html" style="color:white; margin:0 1rem; text-decoration:none; font-weight:bold;">Testimonials</a>
+      <a href="contact.html" style="color:white; margin:0 1rem; text-decoration:none; font-weight:bold;">Contact</a>
+    </div>
   </nav>
 
 <div class="container">
