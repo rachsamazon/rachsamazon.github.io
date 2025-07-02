@@ -2,94 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trusted.Zone – Decoy Detection, Real Protection</title>
+  <title>Trusted.Zone | Honeypot Monitoring Service</title>
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(180deg, #0e1628, #0d1a33);
-      color: #fff;
-      overflow-x: hidden;
-    }
-    header {
-      padding: 2rem;
-      text-align: center;
-      background-color: rgba(0, 0, 0, 0.3);
-      animation: fadeIn 1.5s ease-in;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      letter-spacing: 1px;
+      background-color: #0d1b2a;
+      color: #ffffff;
+      animation: fadeIn 1s ease;
     }
     nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      margin: 1rem 0;
+      background-color: #1b263b;
+      padding: 1rem;
+      text-align: center;
     }
     nav a {
-      color: #9fc7ff;
+      color: white;
+      margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #fff;
     }
     .hero {
-      background: url('https://images.unsplash.com/photo-1623776052491-77d63f6c7de2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
-      height: 60vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       text-align: center;
-      padding: 2rem;
-      animation: fadeIn 2s ease-in;
+      padding: 6rem 2rem;
     }
-    .hero h2 {
-      font-size: 2rem;
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 1rem;
-      border-radius: 8px;
-    }
-    section {
-      max-width: 800px;
-      margin: auto;
-      padding: 3rem 1rem;
-      text-align: center;
-      transform: translateX(100vw);
-      opacity: 0;
-      transition: all 1s ease;
-    }
-    section.active {
-      transform: translateX(0);
-      opacity: 1;
-    }
-    section h2 {
-      color: #a4d2ff;
+    h1 {
+      font-size: 3rem;
       margin-bottom: 1rem;
     }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #aaa;
-      background-color: rgba(0, 0, 0, 0.2);
-    }
-    .testimonials {
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 2rem;
-      border-radius: 12px;
-      margin-top: 2rem;
-    }
-    .testimonial {
-      margin-bottom: 1.5rem;
-      font-style: italic;
+    p {
+      font-size: 1.2rem;
     }
     @keyframes fadeIn {
       from { opacity: 0; }
@@ -98,64 +40,16 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Trusted.Zone</h1>
-    <p>Deploy the Trap. Catch the Threat.</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#pricing">Pricing</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html">Contact</a>
+  </nav>
   <div class="hero">
-    <h2>Early Detection. Maximum Protection.<br/>Simple to deploy. Impossible to ignore.</h2>
+    <h1>Welcome to Trusted.Zone</h1>
+    <p>Deploy a honeypot. Catch real threats. Sleep better.</p>
   </div>
-
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We provide a dead-simple honeypot deployment system with zero maintenance. Detect attackers early using a fake system that alerts you instantly — without touching your real infrastructure.</p>
-  </section>
-
-  <section id="pricing">
-    <h2>Pricing</h2>
-    <p><strong>Setup Fee:</strong> €999 one-time<br/>
-       <strong>Monitoring:</strong> From €199/month<br/><br/>
-       Custom packages available for enterprises.</p>
-  </section>
-
-  <section class="testimonials">
-    <h2>Testimonials</h2>
-    <div class="testimonial">"Trusted.Zone caught a brute force scan just two hours after we deployed. Worth every cent."<br/><strong>– IT Manager, SME Croatia</strong></div>
-    <div class="testimonial">"Simple, fast, and reliable. I wish we had this years ago."<br/><strong>– Network Admin, LegalTech GmbH</strong></div>
-    <div class="testimonial">"Peace of mind with a one-command install. Finally, cybersecurity that just works."<br/><strong>– CISO, FinTech Baltic</strong></div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:info@trusted.zone" style="color:#9fc7ff;">info@trusted.zone</a></p>
-  </section>
-
-  <footer>
-    &copy; 2025 Trusted.Zone | R&D Consulting
-  </footer>
-
-  <script>
-    const sections = document.querySelectorAll('section');
-    const options = {
-      threshold: 0.1
-    };
-    const observer = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-        }
-      });
-    }, options);
-
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-  </script>
 </body>
 </html>
