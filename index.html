@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trusted.Zone – Decoy Detection, Real Protection</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: linear-gradient(180deg, #0e1628, #0d1a33);
       color: #fff;
-      scroll-behavior: smooth;
+      overflow-x: hidden;
     }
     header {
       padding: 2rem;
@@ -59,7 +62,13 @@
       margin: auto;
       padding: 3rem 1rem;
       text-align: center;
-      animation: fadeInUp 1.5s ease-in;
+      transform: translateX(100vw);
+      opacity: 0;
+      transition: all 1s ease;
+    }
+    section.active {
+      transform: translateX(0);
+      opacity: 1;
     }
     section h2 {
       color: #a4d2ff;
@@ -85,10 +94,6 @@
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -134,5 +139,23 @@
   <footer>
     &copy; 2025 Trusted.Zone | R&D Consulting
   </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+    const options = {
+      threshold: 0.1
+    };
+    const observer = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, options);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
 </body>
 </html>
