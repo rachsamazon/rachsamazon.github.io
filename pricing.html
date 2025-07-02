@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Testimonials</title>
+  <title>Pricing</title>
   
   <style>
     body {
@@ -10,6 +10,22 @@
       font-family: Arial, sans-serif;
       background-color: #0d1b2a;
       color: #ffffff;
+      animation: fadeIn 0.5s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    nav {
+      background-color: #1b263b;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
     }
     .container {
       padding: 4rem;
@@ -53,20 +69,13 @@
     </div>
   </nav>
 
-<div class="container">
-        <h1>What Our Clients Say</h1>
-        <div class="testimonial">
-          “Trusted.Zone caught a brute force scan just two hours after we deployed. Worth every cent.”
-          <div class="author">– IT Manager, SME Croatia</div>
-        </div>
-        <div class="testimonial">
-          “Simple, fast, and reliable. I wish we had this years ago.”
-          <div class="author">– Network Admin, LegalTech GmbH</div>
-        </div>
-        <div class="testimonial">
-          “Peace of mind with a one-command install. Finally, cybersecurity that just works.”
-          <div class="author">– CISO, FinTech Baltic</div>
-        </div>
-        </div>
+<div class="container"><h1>Pricing</h1>
+        <div class="price-box">
+          <h2>Setup: €999</h2>
+          <p>One-time deployment & secure configuration</p>
+          <hr />
+          <h2>Monitoring: €199/mo</h2>
+          <p>Email alerts, log analysis, monthly report</p>
+        </div></div>
 </body>
 </html>
