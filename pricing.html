@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pricing – Trusted.Zone</title>
+  <meta charset="UTF-8" />
+  <title>Pricing | Trusted.Zone</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(180deg, #0e1628, #0d1a33);
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      opacity: 0;
-      animation: fadeIn 1s ease forwards;
+      background-color: #0d1b2a;
+      color: #ffffff;
+      animation: fadeIn 1s ease;
+    }
+    nav {
+      background-color: #1b263b;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
     }
     .container {
+      padding: 4rem;
       text-align: center;
-      max-width: 600px;
+    }
+    .price-box {
+      background: #1b263b;
+      margin: 2rem auto;
       padding: 2rem;
-    }
-    h1 {
-      color: #a4d2ff;
-    }
-    p {
-      font-size: 1.2rem;
-      line-height: 1.6;
-    }
-    a {
-      color: #9fc7ff;
-      display: inline-block;
-      margin-top: 2rem;
-      text-decoration: none;
-    }
-    a:hover {
-      color: #ffffff;
+      border-radius: 8px;
+      width: 300px;
     }
     @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+  </nav>
   <div class="container">
     <h1>Pricing</h1>
-    <p><strong>Setup Fee:</strong> €999 one-time<br/>
-       <strong>Monitoring:</strong> From €199/month<br/><br/>
-       Custom packages available for enterprise environments.</p>
-    <a href="index.html">← Back to Home</a>
+    <div class="price-box">
+      <h2>Setup: €999</h2>
+      <p>One-time deployment & secure configuration</p>
+      <hr />
+      <h2>Monitoring: €199/mo</h2>
+      <p>Email alerts, log analysis, monthly report</p>
+    </div>
   </div>
 </body>
 </html>
