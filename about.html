@@ -2,44 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Trusted Zone</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0d1b2a;
+      color: #ffffff;
+      animation: fadeIn 0.5s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    nav {
+      background-color: #1b263b;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      padding: 4rem;
+      text-align: center;
+    }
+    .description {
+      max-width: 800px;
+      margin: 1.5rem auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+      text-align: left;
+    }
+  </style>
 </head>
 <body>
-  <div class="fade-container">
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-          <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>What is a Honeypot?</h1>
-      <p class="description">
-        A honeypot is a decoy system that imitates real network services, intentionally designed to be probed, scanned, or attacked. It doesn't host real data or production functionality, but it looks legitimate to attackers. When malicious actors engage with the honeypot, their actions are logged in detail — providing early warning signs of intrusion attempts and exposing techniques and targets before damage is done.
-      </p>
 
-      <h2>Why It Works</h2>
-      <p class="description">
-        Traditional security tools often react too late. A honeypot, on the other hand, attracts attackers away from live infrastructure and exposes them during their reconnaissance phase — giving your team the intelligence edge.
-      </p>
+  <nav>
+    <div style="background-color:#1b263b; padding:1rem; text-align:center;">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
 
-      <h2>What You Need</h2>
-      <p class="description">
-        Trusted Zone requires minimal resources to deploy. A small virtual machine or cloud instance with internet access is enough to install and run the honeypot system. No integration with existing infrastructure is needed. It operates independently, logging intrusion attempts and alerting you instantly via email or your chosen channel.
-      </p>
+  <div class="container">
+    <h1>What is a Honeypot?</h1>
+    <p class="description">
+      A honeypot is a decoy system that imitates real network services, intentionally designed to be probed, scanned, or attacked. It doesn't host real data or production functionality, but it looks legitimate to attackers. When malicious actors engage with the honeypot, their actions are logged in detail — providing early warning signs of intrusion attempts and exposing techniques and targets before damage is done.
+    </p>
 
-      <h2>Our Philosophy</h2>
-      <p class="description">
-        Trusted Zone was created with a singular goal: to make enterprise-grade intrusion visibility accessible to any organization. Built by a veteran of enterprise IT and cybersecurity training, this service delivers maximum defensive value with minimum technical friction.
-      </p>
-    </main>
+    <h2>Why It Works</h2>
+    <p class="description">
+      Traditional security tools often react too late. A honeypot, on the other hand, attracts attackers away from live infrastructure and exposes them during their reconnaissance phase — giving your team the intelligence edge.
+    </p>
+
+    <h2>What You Need</h2>
+    <p class="description">
+      Trusted Zone requires minimal resources to deploy. A small virtual machine or cloud instance with internet access is enough to install and run the honeypot system. No integration with existing infrastructure is needed. It operates independently, logging intrusion attempts and alerting you instantly via email or your chosen channel.
+    </p>
+
+    <h2>Our Philosophy</h2>
+    <p class="description">
+      Trusted Zone was created with a singular goal: to make enterprise-grade intrusion visibility accessible to any organization. Built by a veteran of enterprise IT and cybersecurity training, this service delivers maximum defensive value with minimum technical friction.
+    </p>
   </div>
+
 </body>
 </html>
