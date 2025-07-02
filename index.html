@@ -2,32 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Trusted Zone | Honeypot Monitor</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0d1b2a;
+      color: #ffffff;
+      animation: fadeIn 0.5s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    nav {
+      background-color: #1b263b;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      padding: 4rem;
+      text-align: center;
+    }
+    .subtitle {
+      font-size: 1.2em;
+      margin-bottom: 1.5em;
+    }
+    .description {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
-  <div class="fade-container">
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
-          <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h1>See attackers before they see you</h1>
-      <p class="subtitle">Enterprise-grade protection for a fraction of the price.</p>
-      <div class="description">       
-        <p>
+
+  <nav>
+    <div style="background-color:#1b263b; padding:1rem; text-align:center;">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>See attackers before they see you</h1>
+    <p class="subtitle">Enterprise-grade protection for a fraction of the price.</p>
+    <div class="description">
+      <p>
         Trusted Zone was built by an InfoSec insider with a proven track record in defense, education, and invention — distilling years of enterprise IT experience and patented innovation into a field-tested defensive layer any business can deploy without a full security team or expensive software suite.
-        </p>
-      </div>
-    </main>
+      </p>
+    </div>
   </div>
+
 </body>
 </html>
